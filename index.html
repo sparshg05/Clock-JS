@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+<body bgcolor="3D087B">
+    <div class="main-container">
+
+        <div id="container-1">
+
+            <div class="clock-pic-box"></div>
+            <div class="left-second-box">
+                <div class="left-second-inner">
+                    <div id="img1"></div>
+                    <div class="left-second-inner-option">
+                        <label>Set wake up time</label>
+                        <select id="wakeUpTimeSelector">
+                            <option value="0">Default</option>
+                            <option value="1">1 AM - 2 AM</option>
+                            <option value="2">2 AM - 3 AM</option>
+                            <option value="3">3 AM - 4 AM</option>
+                            <option value="4">4 AM - 5 AM</option>
+                            <option value="5">5 AM - 6 AM</option>
+                            <option value="6">6 AM - 7 AM</option>
+                            <option value="7">7 AM - 8 AM</option>
+                            <option value="8">8 AM - 9 AM</option>
+                            <option value="9">9 AM - 10 AM</option>
+                            <option value="11">11 AM - 12 AM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="left-second-inner">
+                    <div id="img2"></div>
+                    <div class="left-second-inner-option">
+                        <label>Set lunch time</label>
+                        <select id="lunchTimeSelector">
+                            <option value="0">Default</option>
+                            <option value="12">12 PM - 1 PM</option>
+                            <option value="1">1 PM - 2 PM</option>
+                            <option value="2">2 PM - 3 PM</option>
+                            <option value="3">3 PM - 4 PM</option>
+                            <option value="4">4 PM - 5 PM</option>
+                            <option value="5">5 PM - 6 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="left-second-inner">
+                    <div id="img3"></div>
+                    <div class="left-second-inner-option">
+                        <label>Set nap time</label>
+                        <select id="napTimeSelector">
+                            <option value="0">Default</option>
+                            <option value="6">6 PM - 7 PM</option>
+                            <option value="7">7 PM - 8 PM</option>
+                            <option value="8">8 PM - 9 PM</option>
+                            <option value="9">9 PM - 10 PM</option>
+                            <option value="10">10 PM - 11 PM</option>
+                            <option value="11">11 PM - 12 PM</option>
+                            <option value="0">00 AM - 1 AM</option>
+                            <option value="1">1 AM - 2 AM</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="party-time" id="set-time" onclick="handleClick()">SET TIME!!</div>
+
+        </div>
+
+        <div class="container-2">
+
+            <div class="flex-item1" id="digital-clock">
+                <div id="time">
+                    <h2>TIME</h2>
+                </div>
+                <div id="clock-time-box">
+                    <span id="hour">00</span>
+                    <p>hours</p>
+                </div>
+                <span style="font-size: 2.7rem; padding-top: 4%;">:</span>
+
+                <div id="clock-time-box">
+                    <span id="minute">00</span>
+                    <p>mins</p>
+                </div>
+                <span style="font-size: 2.7rem; padding-top: 4%;">:</span>
+
+                <div id="clock-time-box">
+                    <span id="second">00</span>
+                    <p>secs</p>
+                </div>
+
+                <div id="AM-PM-box">
+                    <p id="AM-PM">AM</p>
+                </div>
+
+                <div id="lower-box1"></div>
+                <div id="lower-box2"></div>
+            </div>
+
+            <div class="flex-item1" id="right-bottom-container">
+                <div id="text-container" >
+                    
+                </div>
+                <div id="img-container">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

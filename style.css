@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+}
+#container-1{
+    width: 38%;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+    margin-top: 2%;
+    /* border: 2px solid red; */
+}
+.clock-pic-box{
+    background-image: url("./clock.png");
+    background-repeat: no-repeat;
+    background-size: 50% 90%;
+    /* border: 2px solid yellow; */
+    height: 20%;
+}
+.left-second-box{
+    margin-top: 2%;
+    /* border: 2px solid yellow; */
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    height: 49%;
+    border-radius: 13px;
+}
+.left-second-inner{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 33%;
+    position: relative;
+    display: flex;
+}
+#img1{
+    position: relative;
+    background-image: url("./wake-time-pic.png");
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-position: center;
+}
+.left-second-inner-option{
+    width: 80%;
+    padding-left: 2%;
+    padding-top: 6%;
+    font-size: 1.5rem;
+    color: purple;
+}
+#wakeUpTimeSelector{
+    width: 50%;
+    height: 46%;
+    margin-left: 5%;
+    border: 3px solid lightgrey;
+    border-radius: 7px;
+}
+#img2{
+    position: relative;
+    background-image: url("./lunch-time-pic.png");
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-position: center;
+}
+#lunchTimeSelector{
+    width: 50%;
+    height: 46%;
+    margin-left: 11%;
+    border: 3px solid lightgrey;
+    border-radius: 7px;
+}
+#img3{
+    position: relative;
+    background-image: url("./nap-time-pic.png");
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-position: center;
+}
+#napTimeSelector{
+    width: 50%;
+    height: 46%;
+    margin-left: 15%;
+    border: 3px solid lightgrey;
+    border-radius: 7px;
+}
+.party-time{
+    position: relative;
+    width: 37%;
+    height: 8.2%;
+    background-image: linear-gradient(to right, #6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+    color: white;
+    font-size: 1.4rem;
+    /* border: 2px solid red; */
+    margin: 4%;
+    padding-left: 8%;
+    padding-top: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dynamic-box{
+    position: relative;
+    height: 13%;
+    width: 100%;
+    background-color:pink;
+    border-radius: 8px;
+    color: rgb(228, 10, 10);
+    font-size: 1.15rem;
+    padding-left: 2%;
+    padding-top: 1.5%;
+}
+
+.container-2{
+    width: 38%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    /* border: 2px solid yellow; */
+}
+#digital-clock{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    /* border: 2px solid red; */
+    border-radius: 12px;
+    display: flex;
+}
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19%;
+    height: 100%;
+    float: left;
+    color: purple;
+    /* border: 2px solid red; */
+}
+#clock-time-box{
+    width: 16%;
+    height: 76%;
+    /* border: 2px solid red; */
+    text-align: center;
+    color: rgb(202, 30, 202);
+    background-image: url("./timeline.png");
+    padding-top: 2%;
+    font-size: 1.7rem;
+    margin-top: 2%;
+    border-radius: 6px;
+}
+#AM-PM-box{
+    width: 16%;
+    height: 76%;
+    /* border: 2px solid red; */
+    text-align: center;
+    color: white;
+    background-image: url("./AM_svg.png");
+    padding-top: 5%;
+    font-size: 1.7rem;
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 6px;
+}
+#lower-box1{
+    position: absolute;
+    width: 78%;
+    height: 100%;
+    /* margin: auto; */
+    left: 10%;
+    opacity: 0.8;
+    z-index: -1;
+    top: 11%;
+    border-radius: 10px;
+    background-color: white;
+}
+#lower-box2{
+    position: absolute;
+    width: 66%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -2;
+    top: 23%;
+    left: 15%;
+    border-radius: 10px;
+    background-color: white;
+}
+#right-bottom-container{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* border: 2px solid red; */
+    margin-top: 8%;
+    border-radius: 15px;
+}
+/* #lunch{
+    border: 2px solid green;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: white;
+} */
+#text-container{
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid green; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 2.4rem;
+    color: blueviolet;
+    font-weight: bolder;
+    padding-left: 5%;
+    padding-top: 2%;
+    font-family: 'Secular One', sans-serif;
+}
+#img-container{
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid red; */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-size: 100% 100%;
+    background-image: url("./lunch-img.png");
+}
