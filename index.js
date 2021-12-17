@@ -13,10 +13,7 @@ setInterval(() => {
     var m=time.getMinutes();
     var s=time.getSeconds();
 
-    if(h>12){
-        hourHand.innerHTML=h-12;
-    }else hourHand.innerHTML=h;
-
+    hourHand.innerHTML=h;
     minHand.innerHTML=m;
     secHand.innerHTML=s;
 
@@ -56,10 +53,10 @@ function handleClick(){
     console.log("button clicked")
 
     let wakeUpInput = document.getElementById("wakeUpTimeSelector").value;
+    let lunchInput = document.getElementById("lunchTimeSelector").value;
+    let napInput = document.getElementById("napTimeSelector").value;
+    
     var hour=new Date().getHours();
-    if(hour>12){
-        hour=hour-12;
-    }
 
     if(wakeUpInput==hour){
         console.log("Breakfast Time!!")
@@ -67,14 +64,14 @@ function handleClick(){
         document.getElementById("text-container").innerHTML="Breakfast Time!!";
     }
 
-    let lunchInput = document.getElementById("lunchTimeSelector").value;
+    
     if(lunchInput == hour){
         console.log("Lunch Time!!")
         document.getElementById("img-container").style.backgroundImage="url('lunch-img.PNG')";
         document.getElementById("text-container").innerHTML="Lets have some Lunch!!";
     }
 
-    let napInput = document.getElementById("napTimeSelector").value;
+    
     if(napInput == hour){
         console.log("Nap Time!!")
         document.getElementById("img-container").style.backgroundImage="url('goodnight_img.PNG')";
